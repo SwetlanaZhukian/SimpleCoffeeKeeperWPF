@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CoffeKeeper.BusinessLayer.Models.CoffeViewModel">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAABAAAAIAAAAQAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\CoffeViewModel .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CoffeKeeper.BusinessLayer.Models.GroupViewModel">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Models\GroupViewModel .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CoffeKeeper.BusinessLayer.Services.CoffeService" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAEAAJAAACAAAAIAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Services\CoffeService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CoffeKeeper.BusinessLayer.Services.GroupServise" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAEAABAAAAAAAAAAAAAAAQABgAAAAAAABQ=</HashCode>
+      <FileName>Services\GroupServise .cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="CoffeKeeper.BusinessLayer.Interfaces.ICoffeService">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAJAAACAAAAIAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICoffeService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CoffeKeeper.BusinessLayer.Interfaces.IGroupService">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAABAAAAAAAAAAAAAAAQABgAAAAAAABQ=</HashCode>
+      <FileName>Interfaces\IGroupService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

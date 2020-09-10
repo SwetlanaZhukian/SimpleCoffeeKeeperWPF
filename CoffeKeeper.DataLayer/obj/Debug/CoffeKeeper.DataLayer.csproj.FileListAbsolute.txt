@@ -1,0 +1,33 @@
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\CoffeKeeper.DataLayer.dll.config
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\CoffeKeeper.DataLayer.dll
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\CoffeKeeper.DataLayer.pdb
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\AutoMapper.dll
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.dll
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\System.ValueTuple.dll
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\AutoMapper.pdb
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\AutoMapper.xml
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.xml
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\System.ValueTuple.xml
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.csprojResolveAssemblyReference.cache
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.csproj.CoreCompileInputs.cache
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.dll
+E:\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.pdb
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\CoffeKeeper.DataLayer.dll.config
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\CoffeKeeper.DataLayer.dll
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\CoffeKeeper.DataLayer.pdb
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\AutoMapper.dll
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.dll
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\System.ValueTuple.dll
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\AutoMapper.pdb
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\AutoMapper.xml
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.xml
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\bin\Debug\System.ValueTuple.xml
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.csprojAssemblyReference.cache
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.csproj.CoreCompileInputs.cache
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.csproj.CopyComplete
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.dll
+D:\Задания стажировка\Курсовая_поис\Sol_CoffeKeeper\CoffeKeeper.DataLayer\obj\Debug\CoffeKeeper.DataLayer.pdb

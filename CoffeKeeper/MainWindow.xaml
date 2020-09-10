@@ -1,0 +1,168 @@
+﻿<Window x:Class="CoffeKeeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoffeKeeper"
+        mc:Ignorable="d"
+        Title="CoffeKeeper" Height="500" Width="900">
+
+    
+        <Window.Resources>
+
+      
+        <Style TargetType="Button">
+            <Style.Setters>
+                <Setter Property="Button.Background" Value="WhiteSmoke" />
+                <Setter Property="Button.Foreground" Value="Black" />
+                <Setter Property="Button.FontFamily" Value="Verdana" />
+                <Setter Property="Button.FontWeight" Value="DemiBold" />
+            </Style.Setters>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="True" />
+                        <Condition Property="IsPressed" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="FontSize" Value="14" />
+                        <Setter Property="Foreground" Value="Red" />
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <TabControl x:Name="tabmain">
+        <TabItem x:Name="mainTab">
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+
+                    <TextBlock Margin="3">Главная</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid Background="LightGray" >
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+                    <ListBox Grid.Column="0" Grid.RowSpan="2" x:Name="lbGroup" DisplayMemberPath="GroupName"
+                      ItemsSource="{Binding }"
+                      SelectedValuePath="ID" Foreground="Black" FontSize="20" FontWeight="DemiBold"  />
+                    <!--SelectionChanged="lbGroup_SelectionChanged-->
+                    <ListView Grid.Column="1" Grid.RowSpan="2"  x:Name="lbCoffe"
+                 DataContext="{Binding ElementName=lbGroup, Path=SelectedItem}"
+                     ItemsSource="{Binding Path=Coffes}" SelectionChanged="list_selected"   Foreground="Black" FontSize="15" FontWeight="DemiBold"  >
+
+                       
+                        <ListView.View >
+                            <GridView >
+                                
+                                    <GridViewColumn  Width="155"   DisplayMemberBinding="{Binding Path=Name}">Название</GridViewColumn>
+                                <GridViewColumn Width="85" DisplayMemberBinding="{Binding Path=Volume}">Объём</GridViewColumn>
+                                <GridViewColumn Width="85" DisplayMemberBinding="{Binding Path=Price}">Цена</GridViewColumn>
+                                </GridView>
+                        </ListView.View>
+                    
+                    </ListView>
+                   
+                    <ListView  Grid.Column="2" Grid.RowSpan="2"  x:Name="lbPice" Foreground="Black" FontSize="15" FontWeight="DemiBold">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="155"  DisplayMemberBinding="{Binding Path=Name  }" >Название</GridViewColumn >
+                                <GridViewColumn Width="85" DisplayMemberBinding="{Binding Path=Volume}">Объём</GridViewColumn>
+                                <GridViewColumn x:Name="pt" Width="85" DisplayMemberBinding="{Binding Path=Price}">Цена</GridViewColumn>
+                            </GridView>
+
+                        </ListView.View>
+
+                    </ListView>
+                   
+                    <StackPanel Grid.Column="2" Grid.Row="2" Orientation="Horizontal" >
+                        <Button Margin="20,30,20,31" Content="Сброс" Width="71"  Click="Button_Click_1"/>
+                        <Button Margin="10,30,10,31" Content="Нал" Width="60" Background="Green"  Click="Button_Click_2"/>
+                        <Button Margin="20,30,20,31" Content="Безнал" Width="78" Background="Blue" Click="Button_Click_2"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Vertical"  >
+                        <Label  HorizontalAlignment="Left" Width="120" FontWeight="Bold" FontSize="25" Content="Сумма:"/>
+                        <TextBlock x:Name="tbprice" Foreground="Red" FontSize="20"  HorizontalAlignment="Left" Width="120" />
+                        <Label  HorizontalAlignment="Left" Width="82" FontWeight="Bold" FontSize="16" Content="Скидка:"/>
+                        <TextBlock x:Name="tbsale" HorizontalAlignment="Left" FontSize="16" Width="120" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" >
+                        <Button  Content="0%" Width="47" Click="Button_Click_3"  Margin="5,34,5,36"/>
+                        <Button  Content="10%" Width="65" Click="Button_Click_4" Margin="10,34,5,36"/>
+                        <Button  Content="20%" Width="65" Click="Button_Click_5" Margin="10,34,5,36"/>
+                        <Button  Content="100%" Width="65" Click="Button_Click_6" Margin="10,34,5,36"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem x:Name="chTab">
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+
+                    <TextBlock Margin="3">Редактирование</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid Background="LightGray">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+
+
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+
+                    </Grid.RowDefinitions>
+                    <ListBox Grid.Column="0" Grid.Row="0" x:Name="lbGroup_1" DisplayMemberPath="GroupName"
+                      ItemsSource="{Binding }"
+                      SelectedValuePath="ID" Grid.ColumnSpan="2" Foreground="Black" FontSize="20" FontWeight="DemiBold" />
+                    <!--SelectionChanged="lbGroup_SelectionChanged-->
+                    <ListView Grid.Column="2" Grid.Row="0"  x:Name="lbCoffe_1"
+                 DataContext="{Binding ElementName=lbGroup_1, Path=SelectedItem}"
+                     ItemsSource="{Binding Path=Coffes}" SelectionChanged="list_selected" Foreground="Black" FontSize="15" FontWeight="DemiBold">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="200"  DisplayMemberBinding="{Binding Path=Name}">Название</GridViewColumn>
+                                <GridViewColumn Width="125" DisplayMemberBinding="{Binding Path=Volume}">Объём</GridViewColumn>
+                                <GridViewColumn Width="125" DisplayMemberBinding="{Binding Path=Price}">Цена</GridViewColumn>
+                            </GridView>
+
+                        </ListView.View>
+                    </ListView>
+                    <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Vertical"  >
+                        <Button  Content="Добавить группу" Click="AddGroupClick" Margin="35,30,71,10" Height="38"/>
+                        <Button  Content="Изменить группу" Click="ChangeGroupClick"  Margin="35,10,71,10" Height="38"/>
+                        <Button  Content="Удалить группу" Click="DeleteGroupClick" Margin="35,10,71,10" Height="38"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical"  >
+                        <Button  Content="Добавить в группу" Click="AddCoffeClick" Margin="71,30,35,10" Height="38"/>
+                        <Button  Content="Изменить в группе" Click=" ChangeCoffeClick"  Margin="71,10,35,10" Height="38"/>
+                        <Button  Content="Удалить из группы" Click="DeleteCoffeClick" Margin="71,10,35,10" Height="38"/>
+                    </StackPanel>
+
+
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+
+    </TabControl>
+
+</Window>
